@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advertisement Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Advertisement Website</h1>
+    <p>Post your ads here!</p>
+  </header>
+
+  <main>
+    <section id="ad-form">
+      <h2>Post Your Advertisement</h2>
+      <form id="post-ad-form">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <label for="image">Image URL:</label>
+        <input type="url" id="image" name="image" required>
+
+        <button type="submit">Post Ad</button>
+      </form>
+    </section>
+
+    <section id="ads-list">
+      <h2>Posted Advertisements</h2>
+      <div id="ads-container"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
